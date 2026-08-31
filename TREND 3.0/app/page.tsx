@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import * as XLSX from "xlsx";
+import * as XLSX from "./vendor/xlsx-runtime";
 
 type Event={id:string;name:string;label:string;date:string;venue:string;city?:string;opened:string;capacity:number;status:string;lifecycle?:"active"|"paused"|"archived"};
 type Client={id:string;name:string;phone:string;email:string;cpf:string;birth:string;city:string};
